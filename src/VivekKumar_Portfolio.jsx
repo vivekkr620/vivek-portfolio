@@ -661,7 +661,7 @@ export default function Portfolio() {
           </p>
           <div className="h-actions">
             <span className="btn-p" onClick={() => go("experience")} data-cursor="EXPLORE">See My Work →</span>
-            <a href="https://www.linkedin.com/in/vivekkumar011" target="_blank" rel="noreferrer" className="btn-o" data-cursor="VISIT">LinkedIn ↗</a>
+            <a href="https://www.linkedin.com/in/vivek-kumar011/" target="_blank" rel="noreferrer" className="btn-o" data-cursor="VISIT">LinkedIn ↗</a>
           </div>
         </div>
 
