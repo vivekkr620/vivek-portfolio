@@ -452,7 +452,7 @@ const skills = [
 
 const experiences = [
   {
-    period: "Jun 2025 – Sep 2025", company: "Cloudcredits Technologies",
+    period: "June 2025 – Sep 2025", company: "Cloudcredits Technologies",
     role: "Frontend Developer Intern · Jaipur, Rajasthan",
     tags: ["React", "HTML/CSS", "JavaScript", "REST APIs", "Git"],
     bullets: [
@@ -463,7 +463,7 @@ const experiences = [
     ],
   },
   {
-    period: "Jul 2024 – Aug 2024", company: "Learn and Build",
+    period: "July 2024 – Aug 2024", company: "Learn and Build",
     role: "Cybersecurity Intern · Jaipur, Rajasthan",
     tags: ["Network Security", "Ethical Hacking", "Encryption"],
     bullets: [
@@ -760,8 +760,8 @@ export default function Portfolio() {
               {[
                 ["✉️","Email","vk431152@gmail.com","mailto:vk431152@gmail.com"],
                 ["📱","Phone","+91 6205606989","tel:6205606989"],
-                ["💼","LinkedIn","linkedin.com/in/vivekkumar011","https://www.linkedin.com/in/vivekkumar011"],
-                ["📍","Location","Patna, Bihar, India", null],
+                ["💼","LinkedIn","linkedin.com/in/vivek-kumar011/","https://www.linkedin.com/in/vivek-kumar011/"],
+                ["📍","Location","Jaipur, Rajasthan, India", null],
               ].map(([ico,lbl,val,href]) => (
                 href
                   ? <a href={href} target={href.startsWith("http")?"_blank":undefined} rel="noreferrer" className="c-item" key={lbl} data-cursor="OPEN">
@@ -793,7 +793,7 @@ export default function Portfolio() {
       {/* ── FOOTER ── */}
       <footer>
         <div className="f-txt">© 2025 <span>Vivek Kumar</span>. All rights reserved.</div>
-        <div className="f-txt">Built with <span>React.js</span> · Patna, Bihar 🇮🇳</div>
+        <div className="f-txt">Built with <span>React.js</span> · Jaipur, Rajasthan 🇮🇳</div>
       </footer>
     </div>
   );
