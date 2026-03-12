@@ -448,6 +448,7 @@ const skills = [
   { icon: "🛡️", name: "Cybersecurity", desc: "Network security, ethical hacking fundamentals, firewalls & encryption.", pct: 56 },
   { icon: "🐙", name: "Git & GitHub", desc: "Version control, branching workflows, code reviews and CI/CD basics.", pct: 80 },
   { icon: "🐍", name: "Python", desc: "Scripting, data manipulation & automation. Kaggle certified badge holder.", pct: 66 },
+  { icon: "💻", name: "Programming Language", desc: "C/C++, Java + DSA (Data Structures & Algorithms)", pct: 80 },
 ];
 
 const experiences = [
