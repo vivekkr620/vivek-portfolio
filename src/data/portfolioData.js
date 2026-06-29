@@ -2,6 +2,7 @@ import resqAI from "../assets/project-images/resq-ai.png";
 import stackMind from "../assets/project-images/stack-mind.png";
 import wanderlust from "../assets/project-images/wanderlust.png";
 import certificate from "../assets/pdf/CCT-internship.pdf";
+import bsercCertificate from "../assets/pdf/BSERC-Offer-Letter.pdf";
 
 
 export const homeData = {
@@ -56,7 +57,7 @@ export const experiences = [
       "Demonstrated frontend expertise."
     ],
 
-    certificateUrl: null,
+    certificateUrl: certificate,
   },
 
   {
@@ -74,7 +75,7 @@ export const experiences = [
       "Military Intelligence."
     ],
 
-    certificateUrl: null,
+    certificateUrl: bsercCertificate,
   }
 ];
 
