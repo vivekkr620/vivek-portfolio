@@ -1,13 +1,14 @@
 import resqAI from "../assets/project-images/resq-ai.png";
 import stackMind from "../assets/project-images/stack-mind.png";
 import wanderlust from "../assets/project-images/wanderlust.png";
-import certificate from "../assets/pdf/CCT-internship.pdf";
+import cctCertificate from "../assets/pdf/CCT-internship.pdf";
+import sihCertificate from "../assets/pdf/SIH-Certificate.jpeg"
 import bsercCertificate from "../assets/pdf/BSERC-Offer-Letter.pdf";
 
 
 export const homeData = {
   welcomeTag: "Hi there, i am ",
-  name: "Vivek Kumar", 
+  name: "Vivek Kumar",
   title: "I craft seamless web experiences.",
   subtitle:
     "I am a focused frontend developer specializing in building modern web applications. Currently, I love building responsive products using React 19 and clean utility-first styling.",
@@ -40,9 +41,9 @@ export const experiences = [
       "Integrated RESTful APIs to facilitate seamless frontend-backend communication, improving data retrieval efficiency by 25%.",
       "Independently delivered assigned development tasks within strict 3-month remote internship deadlines.",
       "Maintained code quality and version control using Git and GitHub.",
-      "Contributed to UI/UX design discussions."
+      "Contributed to UI/UX design discussions.",
     ],
-    certificateUrl: certificate,
+    certificateUrl: cctCertificate,
   },
 
   {
@@ -52,12 +53,9 @@ export const experiences = [
     location: "Jaipur, India",
     duration: "2024 - 2025",
 
-    points: [
-      "Led cross-functional teams.",
-      "Demonstrated frontend expertise."
-    ],
+    points: ["Led cross-functional teams.", "Demonstrated frontend expertise."],
 
-    certificateUrl: certificate,
+    certificateUrl: sihCertificate,
   },
 
   {
@@ -72,11 +70,11 @@ export const experiences = [
       "Exploring Generative AI.",
       "Autonomous UAV Systems.",
       "Cyber Security.",
-      "Military Intelligence."
+      "Military Intelligence.",
     ],
 
     certificateUrl: bsercCertificate,
-  }
+  },
 ];
 
 export const projects = [
@@ -104,13 +102,7 @@ export const projects = [
     points: [
       "Designed and engineered a high-performance developer knowledge repository and collaborative technical ecosystem.",
     ],
-    tech: [
-      "React.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-    ],
+    tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/vivekkr620/StackMind",
     live: "#",
     image: stackMind,
@@ -122,13 +114,7 @@ export const projects = [
     points: [
       "Architected a complete full-stack hotel listing discovery framework and property rental platform modeled on modern travel booking platforms.",
     ],
-    tech: [
-      "Express.js",
-      "Node.js",
-      "MongoDB",
-      "Cloudinary",
-      "EJS Layouts",
-    ],
+    tech: ["Express.js", "Node.js", "MongoDB", "Cloudinary", "EJS Layouts"],
     github: "https://github.com/vivekkr620/WanderLust",
     live: "#",
     image: wanderlust,
@@ -138,65 +124,71 @@ export const projects = [
 export const skillCategories = [
   {
     title: "Languages",
-    skills: ["C++", "Java", "JavaScript (ES6+)", "Python" ]
+    skills: ["C++", "Java", "JavaScript (ES6+)", "Python"],
   },
   {
     title: "Frameworks & Libraries",
-    skills: ["React.js", "Node.js", "Express.js", "Tailwind CSS"]
+    skills: ["React.js", "Node.js", "Express.js", "Tailwind CSS"],
   },
   {
     title: "Databases",
-    skills: ["MongoDB", "PostgreSQL", "MySQL"]  
+    skills: ["MongoDB", "PostgreSQL", "MySQL"],
   },
   {
     title: "Tools & Platforms",
-    skills: ["Git", "GitHub", "REST APIs"]
+    skills: ["Git", "GitHub", "REST APIs"],
   },
   {
     title: "AI / ML & Cloud",
-    skills: ["Python for Data Science", "Azure Synapse SQL Pool"]
-  }
-]
+    skills: ["Python for Data Science", "Azure Synapse SQL Pool"],
+  },
+];
 
 export const educationData = {
   institution: "Jagannath University, Jaipur",
-  degree: "Bachelor of Technology", 
-  field: "Computer Science and Engineering", 
-  timeline: "2023 - 2027", 
-  location: "Jaipur, Rajasthan, India", 
-  metrics: "SGPA: 7.23 / 10.00 (5th Semester)", 
+  degree: "Bachelor of Technology",
+  field: "Computer Science and Engineering",
+  timeline: "2023 - 2027",
+  location: "Jaipur, Rajasthan, India",
+  metrics: "SGPA: 7.23 / 10.00 (5th Semester)",
   highlights: [
     "Focusing on Core Data Structures, Algorithms, Full-Stack Web Architecture, and Applied AI paradigms.",
-    "Actively involved in technical hackathons and institutional R&D ecosystem implementations."
-  ]
+    "Actively involved in technical hackathons and institutional R&D ecosystem implementations.",
+  ],
 };
 
 export const faqData = [
   {
     question: "What is your primary technical stack?",
-    answer: "I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) along with Next.js, TypeScript, and Tailwind CSS. I am also highly comfortable with languages like Java (DSA), C++, and Python for data-driven backends."
+    answer:
+      "I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) along with Next.js, TypeScript, and Tailwind CSS. I am also highly comfortable with languages like Java (DSA), C++, and Python for data-driven backends.",
   },
   {
     question: "Are you available for internships or freelance roles?",
-    answer: "Yes, absolutely! I am looking for software engineering internships, open-source research collaborations, or frontend freelance contracts where I can optimize web systems and interface architectures."
+    answer:
+      "Yes, absolutely! I am looking for software engineering internships, open-source research collaborations, or frontend freelance contracts where I can optimize web systems and interface architectures.",
   },
   {
     question: "How do you ensure clean, maintainable code structures?",
-    answer: "I adhere to strict component modularization, single-responsibility principles, and utility-first formatting using tools like ESLint and Prettier. I prefer centralizing static content to decouple logic from design layouts."
+    answer:
+      "I adhere to strict component modularization, single-responsibility principles, and utility-first formatting using tools like ESLint and Prettier. I prefer centralizing static content to decouple logic from design layouts.",
   },
   {
-    question: "Do you have experience working with cloud or intelligent systems?",
-    answer: "Yes, I hold an Azure Synapse Serverless SQL Pool certification for cloud data analytics and have worked on specialized multi-modal disaster management concepts integrating image classification parameters."
-  }
+    question:
+      "Do you have experience working with cloud or intelligent systems?",
+    answer:
+      "Yes, I hold an Azure Synapse Serverless SQL Pool certification for cloud data analytics and have worked on specialized multi-modal disaster management concepts integrating image classification parameters.",
+  },
 ];
 
 export const contactData = {
   title: "Get In Touch",
-  subtitle: "I'm always open to discussing new ideas, internship or full-time opportunities, and exciting collaborations. Let's connect!",
-  email: "vk431152@gmail.com", 
-  phone: "+91-6205606989",       
+  subtitle:
+    "I'm always open to discussing new ideas, internship or full-time opportunities, and exciting collaborations. Let's connect!",
+  email: "vk431152@gmail.com",
+  phone: "+91-6205606989",
   location: "Jaipur, Rajasthan, India",
   github: "https://github.com/vivekkr620",
-  linkedin: "https://www.linkedin.com/in/vivek-kumar011/", 
-  medium: "https://medium.com/@vk431152"
+  linkedin: "https://www.linkedin.com/in/vivek-kumar011/",
+  medium: "https://medium.com/@vk431152",
 };

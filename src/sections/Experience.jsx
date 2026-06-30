@@ -9,46 +9,45 @@ import {
 } from "react-icons/fi";
 
 import cctCertificate from "../assets/pdf/CCT-internship.pdf";
+import sihCertificate from "../assets/pdf/SIH-Certificate.jpeg"
 import bsercCertificate from "../assets/pdf/BSERC-Offer-Letter.pdf";
 
 const Experience = () => {
-
-  //  DYNAMIC MEMORY STREAM BINARY DOWNLOADER (BLOB)
   const handleDownload = async (e, expId, expCompany) => {
-    e.preventDefault(); // Browser ke default open/route behavior ko stop karo
+    e.preventDefault();
 
-    // ID verification logic: 
+    // ID verification map
     let targetAssetFile = null;
     if (expId === 1) targetAssetFile = cctCertificate;
+    if (expId === 2) targetAssetFile = sihCertificate;
     if (expId === 3) targetAssetFile = bsercCertificate;
 
-    // Safety fallback protection check
     if (!targetAssetFile) return;
 
     try {
-      
       const response = await fetch(targetAssetFile);
-      const blob = await response.blob(); 
-      
-      const blobUrl = window.URL.createObjectURL(blob);
+      const blob = await response.blob();
+
+      const blobUrl = window.URL.createObjectUrl(blob);
       const tempLink = document.createElement("a");
       tempLink.href = blobUrl;
-      
-      // name on the basis of certificate
-      const formattedCompanyName = expCompany.replace(/\s+/g, '_');
-      tempLink.download = `Vivek_Kumar_${formattedCompanyName}_Certificate.pdf`;
-      
+
+      const formattedCompanyName = expCompany.replace(/\s+/g, "_");
+      tempLink.download = `Vivek_Kumar_${formattedCompanyName}_Certificate.${expId === 2 ? 'jpeg' : 'pdf'}`;
       document.body.appendChild(tempLink);
-      tempLink.click(); // Binary download drop trigger execute kar rahe hai
-      
-      // Memory execution clear
+      tempLink.click();
+
       document.body.removeChild(tempLink);
-      window.URL.revokeObjectURL(blobUrl);
-    } catch (error) {
-      console.error("Blob capture error stream failed, using backup window open redirection:", error);
+      window.URL.revokeObjectUrl(blobUrl);
+    } catch (err) {
+      console.log(
+        "Blob pipeline download failed, opening direct window target backup path:",
+        err,
+      );
       window.open(targetAssetFile, "_blank");
     }
   };
+
 
   return (
     <section
