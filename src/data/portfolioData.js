@@ -104,7 +104,7 @@ export const projects = [
     ],
     tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/vivekkr620/StackMind",
-    live: "#",
+    live: "https://stack-mind-dusky.vercel.app/",
     image: stackMind,
   },
 
