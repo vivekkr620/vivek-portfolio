@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import resume from "../assets/pdf/Vivek_Resume.pdf";
+// import resumePDF from "../assets/pdf/Vivek_Resume.pdf";
+
+const resumePDF = "/Vivek_Resume.pdf";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -121,7 +123,7 @@ const Navbar = () => {
           {/* Resume */}
 
           <a
-            href={resume}
+            href={resumePDF}
             download="Vivek_Kumar_Resume.pdf"
             className="hidden md:inline-flex items-center justify-center rounded-md border border-cyan-500 px-4 py-2 text-sm font-medium text-cyan-400 hover:bg-cyan-500/10 transition-all duration-300"
           >
@@ -170,7 +172,7 @@ const Navbar = () => {
             {/* Resume */}
 
             <a
-              href={resume}
+              href={resumePDF}
               download="Vivek_Kumar_Resume.pdf"
               onClick={() => setIsOpen(false)}
               className="mt-5 flex items-center justify-center rounded-lg border border-cyan-500 bg-cyan-500/10 py-3 font-medium text-cyan-400 transition hover:bg-cyan-500/20"

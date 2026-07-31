@@ -87,7 +87,7 @@ export const projects = [
     tech: [
       "Next.js",
       "Node.js",
-      "FastAPI",
+      "Express.jsx",
       "PostgreSQL",
       "YOLOv8 / TensorFlow.js",
     ],

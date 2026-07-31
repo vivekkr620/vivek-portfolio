@@ -1,13 +1,16 @@
 import { homeData } from "../data/portfolioData";
 import profileImg from "../assets/vivek.jpg";
-import resume from "../assets/pdf/Vivek_Resume.pdf";
+// import resumePDF from "../assets/pdf/Vivek_Resume.pdf";
+
+const resumePDF = "/Vivek_Resume.pdf";
+
 
 const Home = () => {
-  const handleDownload = () => {
-    if (!resume.startsWith("data:") && !resume.startsWith("blob:")) {
-      return;
-    }
-  };
+  // const handleDownload = () => {
+  //   if (!resumePDF.startsWith("data:") && !resumePDF.startsWith("blob:")) {
+  //     return;
+  //   }
+  // };
   return (
     <section
       id="home"
@@ -43,9 +46,9 @@ const Home = () => {
 
             {/* UPDATED SECURE ANCHOR SPECIFICATION */}
             <a
-              href={resume}
+              href={resumePDF}
               download="Vivek_Kumar_Resume.pdf" // downloadable file name
-              onClick={handleDownload}
+              // onClick={handleDownload}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-slate-700 bg-slate-900/60 px-8 py-4 text-slate-300 font-semibold transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400 hover:-translate-y-1"
@@ -69,7 +72,7 @@ const Home = () => {
               {/* Profile Image Viewport */}
               <div className="w-full h-full rounded-full overflow-hidden border border-slate-700 bg-slate-800">
                 <img
-                  src={profileImg} //  Dynamic Bundled Variable
+                  src={profileImg} 
                   alt="Vivek Kumar"
                   className="w-full h-full object-cover"
                 />
