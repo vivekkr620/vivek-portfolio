@@ -136,11 +136,11 @@ export const skillCategories = [
   },
   {
     title: "Tools & Platforms",
-    skills: ["Git", "GitHub", "REST APIs"],
+    skills: ["Git", "GitHub", "Docker", "REST APIs"],
   },
   {
     title: "AI / ML & Cloud",
-    skills: ["Python for Data Science", "Azure Synapse SQL Pool"],
+    skills: ["Python", "Azure Synapse SQL Pool"],
   },
 ];
 
