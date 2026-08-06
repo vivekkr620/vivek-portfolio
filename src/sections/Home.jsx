@@ -1,16 +1,10 @@
 import { homeData } from "../data/portfolioData";
 import profileImg from "../assets/vivek.jpg";
-// import resumePDF from "../assets/pdf/Vivek_Resume.pdf";
 
 const resumePDF = "/Vivek_Resume.pdf";
 
 
 const Home = () => {
-  // const handleDownload = () => {
-  //   if (!resumePDF.startsWith("data:") && !resumePDF.startsWith("blob:")) {
-  //     return;
-  //   }
-  // };
   return (
     <section
       id="home"
@@ -47,8 +41,6 @@ const Home = () => {
             {/* UPDATED SECURE ANCHOR SPECIFICATION */}
             <a
               href={resumePDF}
-              download="Vivek_Kumar_Resume.pdf" // downloadable file name
-              // onClick={handleDownload}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-slate-700 bg-slate-900/60 px-8 py-4 text-slate-300 font-semibold transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400 hover:-translate-y-1"
@@ -61,15 +53,11 @@ const Home = () => {
         {/* Right Side */}
         <div className="flex justify-center lg:justify-end">
           <div className="relative">
-            {/* Glow Effect */}
             <div className="absolute -inset-8 rounded-full bg-cyan-500/20 blur-3xl"></div>
 
-            {/* Outer Circle Container */}
             <div className="relative w-80 h-80 rounded-full border border-cyan-500/20 bg-slate-900/60 backdrop-blur-xl p-4">
-              {/* Animated Rotating Ring */}
               <div className="absolute inset-0 rounded-full border border-dashed border-cyan-400/30 animate-spin [animation-duration:20s]"></div>
 
-              {/* Profile Image Viewport */}
               <div className="w-full h-full rounded-full overflow-hidden border border-slate-700 bg-slate-800">
                 <img
                   src={profileImg} 
